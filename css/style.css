@@ -24,6 +24,22 @@
   flex-direction: row;
   padding: 0 10px;
 }
+
+.d-flex-footer{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 0;
+  margin-top: 10px;
+}
+
+.d-flex-description {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+}
 /* Header */
 
 #menu {
@@ -32,7 +48,6 @@
   width: 100%;
   color: white;
   ul {
-    list-style: none;
     padding: 5px 10px;
 
     a{
@@ -105,6 +120,12 @@
 }
 /* Footer */
 
+#description{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    color: white;
+}
 /* General */
 
 body {
@@ -116,4 +137,8 @@ body {
 img
 {
     max-width: 100%;
+}
+
+ul{
+    list-style: none;
 }
