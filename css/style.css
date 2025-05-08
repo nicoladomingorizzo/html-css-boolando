@@ -37,7 +37,6 @@
 .d-flex-description {
 display: flex;
 justify-content: space-between;
-align-items: center;
 flex-direction: column;
 }
 /* Header */
@@ -125,6 +124,12 @@ flex-direction: column;
     height: 100px;
     width: 100%;
     color: white;
+}
+
+footer{
+    li{
+        padding-right:10px;
+    }
 }
 /* General */
 
