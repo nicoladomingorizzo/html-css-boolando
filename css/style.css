@@ -124,11 +124,14 @@
     }
     .z-index1 {
       position: absolute;
-      transition: opacity 0.5s;
+      transition: opacity 0.2s;
     }
     .card:hover .z-index1 {
       opacity: 0;
     }
+   .heart:hover{
+    color: red;
+   }
   }
 }
 
