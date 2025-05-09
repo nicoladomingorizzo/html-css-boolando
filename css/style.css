@@ -6,6 +6,9 @@
   box-sizing: border-box;
 }
 
+:root{
+  --var-color-orange: #ff6800;
+}
 
 /* Utilities */
 .container {
@@ -44,7 +47,7 @@
 /* Header */
 
 #menu {
-  background-color: #ff6800;
+  background-color: var(--var-color-orange);
   height: 70px;
   width: 100%;
   color: white;
@@ -150,6 +153,10 @@
 footer {
   li {
     padding-right: 10px;
+    a{
+      text-decoration: none;
+      color: white;
+    }
   }
 }
 /* General */
