@@ -1,0 +1,176 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --var-color-orange: #ff6800;
+}
+
+/* Utilities */
+.container {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 10px;
+}
+
+.d-flex-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.d-flex-description {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+/* Header */
+
+#menu {
+  background-color: var(--var-color-orange);
+  height: 70px;
+  width: 100%;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  ul {
+    padding: 5px 10px;
+
+    a {
+      text-decoration: none;
+      color: currentColor;
+    }
+  }
+  .logo {
+    padding: 10px;
+    img {
+      vertical-align: middle;
+      width: 100%;
+      height: 50px;
+    }
+  }
+  .i {
+    padding: 0 20px;
+  }
+}
+/* Main */
+#cards {
+  margin-top: 100px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3rem -1rem;
+  .col-4 {
+    width: calc(100% / 12 * 4);
+    padding: 1rem;
+    margin: 1rem 0;
+    .card {
+      position: relative;
+    }
+    .card-sale {
+      background-color: #ff0000;
+      bottom: 120px;
+      left: 0;
+      padding: 5px 10px;
+    }
+    .card-eco {
+      background-color: #008000;
+      bottom: 120px;
+      left: 55px;
+      padding: 5px 10px;
+    }
+    .card-sale,
+    .card-eco {
+      color: white;
+      position: absolute;
+    }
+    .heart {
+      position: absolute;
+      top: 40px;
+      right: 16px;
+      background-color: white;
+      transform: scale(3);
+    }
+    .correct-price {
+      color: #ff0000;
+      font-weight: 800;
+    }
+    .wrong-price-line-through {
+      text-decoration: line-through;
+      font-weight: 100;
+    }
+
+    .card-image {
+      position: relative;
+    }
+    .z-index1 {
+      position: absolute;
+      transition: opacity 0.2s;
+    }
+    .card:hover .z-index1 {
+      opacity: 0;
+    }
+   .heart:hover{
+    color: red;
+    
+   }
+  }
+}
+
+/* Footer */
+
+#description {
+  background-color: black;
+  height: 100px;
+  width: 100%;
+  color: white;
+}
+
+footer {
+  li {
+    padding-right: 10px;
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+/* General */
+
+body {
+  font-size: 1rem;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
